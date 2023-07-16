@@ -1,0 +1,34 @@
+a {}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div {
+    background-color: #DDE6ED;
+  }
+
+H1 {
+  margin-block-start: 0px;
+}
+
+/* ---------- id selectors -------------- */
+
+/* #profile_image {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+} */
+
+
+/* ----------------------------------------- pseudo classes: this is for state of an element ------------------------------------- */
+
+/* img:hover {
+  color: goldenrod;
+}
+
+a:hover {
+  color: gold;
+} */
