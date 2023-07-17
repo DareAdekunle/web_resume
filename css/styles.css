@@ -4,15 +4,61 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  text-align: center;
 }
-
+/* 
 div {
     background-color: #DDE6ED;
-  }
+  } */
 
 H1 {
   margin-block-start: 0px;
 }
+
+.cloud_bottom {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.cloud_top {
+  position: relative;
+  top: 50px;
+  left: 200px;
+}
+
+.squares {
+  height: 100px;
+  width: 100px;
+}
+
+.profile_header{
+  size: 10%;
+  margin: 0 auto 0 auto;
+}
+
+.top_container {
+  background-color: #DDE6ED;
+  position: relative;
+}
+
+#b {
+  background-color: blue;
+  position: absolute;
+  left: 100px;
+  top: 606px;
+}
+#r {
+  background-color: red;
+  position: absolute;
+  left: 200px;
+  top: 706px;
+}
+
+#y {
+  background-color: yellow;
+}
+
 
 /* ---------- id selectors -------------- */
 
