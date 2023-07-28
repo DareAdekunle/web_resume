@@ -5,6 +5,8 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   text-align: center;
+  font-family: 'Merriweather', serif;
+
 }
 /* 
 div {
@@ -13,18 +15,27 @@ div {
 
 H1 {
   margin-block-start: 0px;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cloud_bottom {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  bottom: 300px;
+  left: 300px;
 }
 
 .cloud_top {
-  position: relative;
+  position: absolute;
+  right: 300px;
   top: 50px;
-  left: 200px;
 }
 
 .squares {
@@ -39,34 +50,22 @@ H1 {
 
 .top_container {
   background-color: #DDE6ED;
+  padding-top: 100px;
   position: relative;
 }
 
-#b {
-  background-color: blue;
-  position: absolute;
-  left: 100px;
-  top: 606px;
-}
-#r {
-  background-color: red;
-  position: absolute;
-  left: 200px;
-  top: 706px;
-}
-
-#y {
-  background-color: yellow;
-}
-
-
 /* ---------- id selectors -------------- */
 
-/* #profile_image {
+#profile_image {
   border-radius: 100%;
   height: 150px;
   width: 150px;
-} */
+}
+
+#profile_mess {
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
 
 /* ----------------------------------------- pseudo classes: this is for state of an element ------------------------------------- */
