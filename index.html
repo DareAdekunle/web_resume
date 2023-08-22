@@ -1,70 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dare the MLE</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Data Science Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="pictures/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital@0;1&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="top_container">
-      <img class= "cloud_top" src="pictures/cloud.png" alt="cloud_img">
-      <h1 class="profile_header">I'm Dare.</h1>
-      <p class="profile_header">An ML Engineer.</p>
-      <img class="cloud_bottom" src="pictures/cloud.png" alt="cloud_img">
-      <img src="pictures/mountain.png" alt="mountain_img">
-    </div>
-
-    <div class="middle-container">
-      <div class="profile">
-        <img src="pictures/IMG_6033-modified.png" id="profile_image" alt="profile picture">
-        <h2>Hello.</h2>
-        <p id="profile_mess">I am an <strong><em>experienced data scientist | machine learning engineer</em></strong> with expertise in finance, 
-          business optimization, and dashboard development. Proficient in leveraging data and 
-          employing machine learning techniques to extract valuable insights, improve operational 
-          efficiency, and drive data-driven decision-making. Skilled in business intelligence, 
-          big data analysis, and impactful dashboard creation. Demonstrated success in identifying 
-          process inefficiencies, conducting detailed analysis, and delivering actionable 
-          recommendations using machine learning algorithms. Seeking a challenging role in data 
-          science, machine learning, or business analytics to apply expertise in driving data-driven 
-          strategies, optimizing performance, and providing valuable insights through advanced 
-          machine learning techniques.</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="" src="" alt="">
-          
-          <h3>Lorem & Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-menu">
+        <div class="title-menu">
+            <a href="#" class="current">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
         </div>
-        <div class="skill-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        <button class="hire-button">Hire Me</button>
+    </div>
+
+    <div class="container">
+        <!-- Nested containers wrapper for left and image containers -->
+        <div class="nested-containers-wrapper">
+            <!-- First nested container -->
+            <div class="nested-container left-container">
+                <h1 class="header">I'm Oludare<br>Adekunle</h1>
+                <p class="description">
+                    I am an experienced data scientist and machine learning engineer with a focus on finance, business optimization, and creating dashboards, using data and machine learning to improve efficiency and inform decision-making, with expertise in business intelligence, big data analysis, and creating impactful dashboards, successfully identifying inefficiencies, analyzing data, and providing actionable recommendations through machine learning algorithms, and now seeking a challenging role in data science, machine learning, or business analytics to apply my skills in driving strategies, optimizing performance, and providing valuable insights through advanced machine learning techniques.
+                </p>
+                <button class="learn-more-button">Learn More</button>
+            </div>
+
+            <!-- Second nested container for image -->
+            <div class="nested-container image-container">
+                <img src="pictures/dare.jpeg" alt="Image" class="fill-image">
+            </div>
         </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-      </div>
     </div>
-    
-    
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© 2023 Oludare Adekunle.</p>
+
+    <div class="container">
+        <!-- Third container -->
+        <div class="about-me-container">
+            <h2 class="about-me-header">About Me</h2>
+            <div class="underline"></div>
+
+            <div class="nested-containers-wrapper">
+                <!-- First nested container -->
+                <div class="nested-container left-container">
+                    <h2 class ="short-p"><strong>Data Scientist and Machine Learning Expert with a Passion for Finance, Business Optimization, and Dashboard Development</strong></h2>
+                    <div class="underline"></div>
+                    <p>Hey there! I’m an experienced data scientist and machine learning engineer with a knack for all things finance, business optimization, and dashboard development. My superpower is using data and machine learning to dig up valuable insights, streamline operations, and help teams make data-driven decisions. I’m a pro at business intelligence, big data analysis, and creating impactful dashboards that actually make a difference. I’ve got a track record of spotting inefficiencies, crunching numbers, and dishing out actionable recommendations using machine learning algorithms. I’m on the hunt for a challenging gig in data science, machine learning, or business analytics where I can put my skills to use, optimize performance, and unlock game-changing insights through advanced machine learning techniques.</p>
+                    <button class="contact-button">Contact Me</button>
+                </div>
+
+                <!-- Second nested container -->
+                <div class="nested-container">
+                    <img src="pictures/div2_2.jpg" alt="Image" class="fill-image">
+                </div>
+            </div>
+        </div>
     </div>
-    
-      
-  </body>
+
+    <div class="container">
+        <h2>Project 3: Title</h2>
+        <p>Description of your third project...</p>
+    </div>
+
+    <div class="container">
+        <h2>Project 4: Title</h2>
+        <p>Description of your fourth project...</p>
+    </div>
+
+    <div class="container">
+        <h2>Project 5: Title</h2>
+        <p>Description of your fifth project...</p>
+    </div>
+
+    <div class="container">
+        <h2>Project 6: Title</h2>
+        <p>Description of your sixth project...</p>
+    </div>
+
+</body>
+</html>
