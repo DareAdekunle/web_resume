@@ -156,6 +156,7 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: 5px;
+  line-height: 1;
 }
 
 .short-p::after {
@@ -177,6 +178,128 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+/* Nested Container Styles */
+.nested-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align headers at the same level */
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+}
+
+/* Service Content Styles */
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Fixed height */
+}
+
+/* Service Image Styles */
+.service-image {
+  width: 100%;
+  /* max-height: 200px; Set a maximum height if needed */
+  object-fit: contain; /* Keep the image centered and contained within the container */
+}
+
+/* Service Details Styles */
+.text-content {
+  text-align: left;
+}
+
+/* Service Title Styles */
+.service-title {
+  font-size: 25px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+/* Service Description Styles */
+.service-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Learn More Link Styles */
+.learn-more-link {
+  color: #2270E2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.learn-more-link:hover {
+  color: #0058a3;
+}
+
+/* Work Experience Container Styles */
+.work-experience-container {
+  text-align: center;
+  margin-top: 20px; /* Add space between this and the previous container */
+}
+
+/* Health Bar Styles */
+.health-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #ddd;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.health-bar .fill {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #49A078;
+}
+
+/* Portfolio Container Styles */
+.portfolio-container {
+  margin-top: 20px; /* Add space between this and the previous container */
+  text-align: center; /* Center-align text in the container */
+}
+
+/* Header Alignment for Portfolio Container */
+.portfolio-container .about-me-header {
+  text-align: center; /* Center-align the header */
+}
+
+/* Simplified Image Carousel Styles */
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center; /* Center-align vertically */
+}
+
+.carousel-images {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease-in-out;
+  justify-content: space-between; /* Distribute images evenly */
+  width: 150%; /* Set a wider width to accommodate all images */
+  transform: translateX(0); /* Initial position */
+}
+
+.carousel-image {
+  width: calc(33.33% - 10px); /* Adjust for equal spacing */
+  text-align: center;
+  margin: 0 5px; /* Add spacing between images */
+}
+
+.carousel-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .contact-button:hover {
