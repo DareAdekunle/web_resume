@@ -89,6 +89,7 @@ body {
 .left-container .header {
   font-size: 48px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .description {
@@ -287,7 +288,7 @@ body {
   flex-wrap: nowrap;
   transition: transform 0.3s ease-in-out;
   justify-content: space-between; /* Distribute images evenly */
-  width: 150%; /* Set a wider width to accommodate all images */
+  width: 300%; /* Set a wider width to accommodate all images */
   transform: translateX(0); /* Initial position */
 }
 
@@ -306,3 +307,102 @@ body {
   background-color: #0058a3;
 }
 
+
+
+/* About Me page */
+
+.nested-containers-wrapper_abtMe {
+  display: flex; /* Use flexbox to layout the child elements */
+  justify-content: center; /* Center the items horizontally */
+  align-items: flex-end; /* Align the items to the end (bottom) */
+  margin: 0 auto;
+  height: 600px; /* Adjust as necessary */
+}
+
+.nested-container-abtme {
+  flex: 1; /* This will be overridden by specific classes below */
+  text-align: left;
+  padding: 10px; /* Add some padding around the containers */
+}
+
+.image-containerabtme {
+  flex: 1; /* Takes up 1 part of the available space */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Ensure the image is aligned to the bottom */
+  height: 100%; /* Make sure the container has height */
+  margin-bottom: 0px;
+}
+
+.left-containerabtme {
+  flex: 2; /* Takes up 2 parts of the available space */
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 0px;
+}
+
+/* Adjust the max-width of the containers to fit the content nicely */
+.left-containerabtme,
+.image-containerabtme {
+  max-width: 1200px; /* Adjust this value as needed */
+}
+
+/* Style the image to fill the container and align to the bottom */
+.fill-imageabtme {
+  width: 75%; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  align-self: flex-end; /* Align the image to the bottom */
+}
+
+.social-links {
+  /* Styling for the social links container */
+  display: flex;
+  justify-content: left; /* This will center the logos horizontally */
+  align-items: left; /* This will center the logos vertically */
+  gap: 10px; /* Adds space between each logo */
+  padding-bottom: 10px; /* Adds padding at the bottom */
+}
+
+.social-links img {
+  width: 24px; /* Example size, adjust as needed */
+  height: auto;
+}
+
+.social-links a {
+  display: inline-block; /* Make the anchor inline-block to allow transformation */
+  margin: 0 5px; /* Add some horizontal space between icons */
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.social-links a img {
+  width: 24px; /* Set the initial size of the icons */
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.social-links a:hover,
+.social-links a:focus { /* Adding :focus for accessibility */
+  transform: scale(1.2); /* Scale up the icon to 120% of its size on hover */
+}
+
+
+.MyServices {
+  font-size: 30px;
+  /* color: #2270E2; */
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  line-height: 1;
+  width: 100%;
+}
+
+.MyServices::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+  width: 25%;
+  height: 2px;
+  background-color: #49A078;
+}
