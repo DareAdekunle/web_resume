@@ -51,7 +51,6 @@ body {
 }
 
 /* Container Styles */
-/* Container Styles */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -69,7 +68,7 @@ body {
 .nested-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex: 1; /* Take equal space within the wrapper */
   padding: 20px;
@@ -179,6 +178,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  align-self: flex-start;
 }
 
 /* Nested Container Styles */
@@ -310,7 +310,6 @@ body {
 
 
 /* About Me page */
-
 .nested-containers-wrapper_abtMe {
   display: flex; /* Use flexbox to layout the child elements */
   justify-content: center; /* Center the items horizontally */
@@ -405,4 +404,69 @@ body {
   width: 25%;
   height: 2px;
   background-color: #49A078;
+}
+
+
+/* Health Bar with text Styles */
+.health-bar-text {
+  width: 100%;
+  height: 20px; /* Increased height to fit text */
+  background-color: #ddd;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 10px;
+  display: flex; /* Use flex to align text and fill */
+  align-items: center; /* Center items vertically */
+  padding-left: 10px; /* Padding to offset text from the left edge */
+}
+
+.health-bar-text .fill {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #49A078;
+  border-radius: 10px; /* Match parent's border-radius */
+}
+
+.health-bar-text .health-text {
+  position: absolute; /* Absolute position within the bar */
+  left: 10px; /* Space from the left */
+  color: white; /* Text color */
+  z-index: 1; /* Ensure it's above the fill */
+}
+
+
+/* Updated Container Styles */
+.nested-containers-wrapper-rec {
+  display: flex;
+}
+
+.nested-container-rec {
+  flex: 1; /* Each container takes up equal width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align headers at the same level */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Updated Image Container Styles */
+.image-container-rec {
+  /* Define a specific size for all images */
+  width: 100px; /* or any size that fits your design */
+  height: 100px; /* same as width for a perfect circle */
+  overflow: hidden; /* Ensures the image doesn't overflow its container */
+  border-radius: 50%; /* Makes the container perfectly round */
+  display: flex; /* To center the image within */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.service-image-rec {
+  width: 100%; /* Fill the entire container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire container area, might crop */
+  border-radius: 50%; /* Ensures the image itself is also rounded */
 }
